@@ -3,8 +3,8 @@
 	mov	ds, ax
 	mov	ax, 0xb800
 	mov 	es, ax
-	mov 	ax, 3	;вызов прерывания для отчистки экрана эти две строки
-	int 	0x10	;
+	mov 	ax, 3	
+	int 	0x10	      ;вызов прерывания для отчистки экрана
 	xor	di, di
 	mov	si, msg
 	mov 	ah, 0xf0
